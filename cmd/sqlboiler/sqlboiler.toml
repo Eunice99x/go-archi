@@ -1,0 +1,14 @@
+output   = "internal/db/pgModels"
+wipe     = true
+no-tests = true
+add-enum-types = true
+
+[psql]
+  dbname = "dblearn"
+  host   = "localhost"
+  port   = 5432
+  user   = "postgres"
+  pass   = "eunice99x"
+  schema = "public"
+  blacklist = ["migrations", "other"]
+  sslmode = "disable"
